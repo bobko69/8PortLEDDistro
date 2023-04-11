@@ -35,5 +35,17 @@ No, the USB-C connector can only be used for programing the board.  When you plu
 ## Where can I get the STL files for the CG1500 case mount?
 STL files can be found on thingiverse https://www.thingiverse.com/thing:5599003
 
+##What are the GPIO pin assignment:
+| Port | PCB v1 | PCB v2 |
+| ---- | ------ | ------ |
+| LED1 | GPIO15 | GPIO1 |
+| LED2 | GPIO14 | GPIO2 |
+| LED3 | GPIO12 | GPIO3 |
+| LED4 | GPIO4 | GPIO4 |
+| LED5 | GPIO2 | GPIO5 |
+| LED6 | GPIO17 | GPIO12 |
+| LED7 | GPIO5 | GPIO14 |
+| LED8 | GPIO33 | GPIO15 |
+
 ## Where can I get the gerber files for this project?
 Sorry the files are not available.  This is not an open source project.
