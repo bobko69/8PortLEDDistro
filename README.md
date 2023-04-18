@@ -40,6 +40,7 @@ The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm
 ![hole spacing](./img/din_rail_holes.png)
 
 ## What are the GPIO pin assignment:
+
 | Port | PCB v1 | PCB v2 |
 | ---- | ------ | ------ |
 | LED1 | GPIO15 | GPIO1 |
@@ -50,6 +51,23 @@ The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm
 | LED6 | GPIO17 | GPIO12 |
 | LED7 | GPIO5 | GPIO14 |
 | LED8 | GPIO33 | GPIO15 |
+
+##How do I use audio reactive WLED?
+- Download and install this image which is built with ethernet and audio reactive: https://github.com/bobko69/8PortLEDDistro/blob/main/files/WLED_0.14.0-b1_ESP32_Ethernet_AudioReactive.bin
+- Wire up your microphone.  This example is for an INMP441.
+
+| INMP441 | 8 Port LED Distro |
+| ------- | ----------------- |
+| VDD | 3.3v |
+| GND | GND |
+| SD | GPIO17 |
+| L/R | GND |
+| WS | GPIO32 |
+| SCK | GPIO33 |
+
+- Confiure WLED, goto Settings/UserMods, scroll down to the AudioReactive section.
+Place a check next to Enabled, Select 'Generic I2s' for type, set I2S SD to 17, Set I2S WS to 32, set I2S SCK to 33, set squelch to 10, set gain to 30, and press the 'Save' button.
+![WLED settings](./img/wled_sound_reactive.png)
 
 ## Where can I get the gerber files for this project?
 Sorry the files are not available.  This is not an open source project.
