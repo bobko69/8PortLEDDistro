@@ -1,5 +1,5 @@
 # 8 Port LED Distro
-![8 Port LED Distro Version 1](./8_Port_LED_Distro_V1andV2.png)
+![8 Port LED Distro Version 1](./img/8_Port_LED_Distro_V1andV2.png)
 
 This document will serve as a place to answer questions about the 8 Port LED Distro.
 
@@ -37,7 +37,7 @@ STL files can be found on thingiverse https://www.thingiverse.com/thing:5599003
 
 ## I want to make my own mount, what is the hole spacing?
 The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm x 65mm.
-![hole spacing](./din_rail_holes.png)
+![hole spacing](./img/din_rail_holes.png)
 
 ## What are the GPIO pin assignment:
 | Port | PCB v1 | PCB v2 |
