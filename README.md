@@ -35,6 +35,10 @@ No, the USB-C connector can only be used for programing the board.  When you plu
 ## Where can I get the STL files for the CG1500 / DIN rail mount?
 STL files can be found on thingiverse https://www.thingiverse.com/thing:5599003
 
+## I want to make my own mount, what is the hole spacing?
+The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm x 65mm.
+![hole spacing](./din_rail_holes.png)
+
 ## What are the GPIO pin assignment:
 | Port | PCB v1 | PCB v2 |
 | ---- | ------ | ------ |
