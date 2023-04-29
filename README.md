@@ -71,3 +71,9 @@ Place a check next to Enabled, Select 'Generic I2s' for type, set I2S SD to 17, 
 
 ## Where can I get the gerber files for this project?
 Sorry the files are not available.  This is not an open source project.
+
+## How should I compile WLED for this board?
+- Follow the PlatformIO compilation guide at [WLED's compilation guide doc](https://kno.wled.ge/advanced/compiling-wled/)
+- Open `platformio.ini`
+- Make sure that `esp32_eth` is uncommented as `default_envs`
+- From here on, you should be able to to build & upload to the board
