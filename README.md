@@ -26,7 +26,7 @@ On the board by the USB-C connector there is a header labeled H1 with 5V, IO32 a
 No, a relay can not be used to turn the board on and off.  There is only 1 power input for the board if you use a relay to turn the power off the esp32 will also turn off and you will not have a way to tell the relay to turn the board back on.  I personally use the kasa smart plugs to turn my controllers on and off. https://www.amazon.com/Kasa-Smart-Required-Certified-EP10P4/dp/B091FXLMS8 way less wiring hassle and has a really nice web interface for scheduling. I have mine turn on at dusk and off at 11pm every night.
 
 ## Can the USB-C connector be used to power the board?
-No, the USB-C connector can only be used for programing the board.  When you plug into the USB-C connector the board will go into bootloader mode.  WLED does not work when the board is in bootloader mode.
+No, the USB-C connector can only be used for programing the board.  When you plug into the USB-C connector the board will go into bootloader mode.  WLED will not run when the board is in bootloader mode.
 
 ## What are the dimensions of the board?
 - Version 1: 110mm x 70mm x 30mm
