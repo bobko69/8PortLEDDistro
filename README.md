@@ -72,8 +72,21 @@ Place a check next to Enabled, Select 'Generic I2s' for type, set I2S SD to 17, 
 ## Where can I get the gerber files for this project?
 Sorry the files are not available.  This is not an open source project.
 
-## How should I compile WLED for this board?
+## How do I compile WLED for this board?
 - Follow the PlatformIO compilation guide at [WLED's compilation guide doc](https://kno.wled.ge/advanced/compiling-wled/)
 - Open `platformio.ini`
 - Make sure that `esp32_eth` is uncommented as `default_envs`
 - From here on, you should be able to to build & upload to the board
+
+## How do I update the firmware?
+
+There are a couple of ways to update the firmware on the board.  None of them use the Arduino IDE.
+
+- The easiest way is to connect the board to a computer with the USB-C port and on the computer navigate to [install.wled.me](https://install.wled.me/). Select the version of firmware you want to install and make sure to check 'my board has ethernet'.  Press the Install button and follow the rest of the prompts.
+
+- If you have built or downloaded an image, and if the board is connected to your wifi or ethernet network, from a computer navigate to the WLED page in the board. Click the config button, then click the security and updates button, then click the manual OTA update button.  From here you will be able to select an image file to install.
+
+- The last way is to connect the board to a computer with the USB-C port and use [esptool](https://github.com/espressif/esptool) to flash the new firmware.  It is a command line tool.  Here is an example command we use when we flash the firmware on the boards: 
+```
+.\esptool-v4.2.1-win64\esptool.exe write_flash 0x10000 ./WLED_0.14.0-b0_ESP32_Ethernet.bin
+```
