@@ -79,7 +79,6 @@ Sorry the files are not available.  This is not an open source project.
 - From here on, you should be able to to build & upload to the board
 
 ## How do I update the firmware?
-
 There are a couple of ways to update the firmware on the board.  None of them use the Arduino IDE.
 
 - The easiest way is to connect the board to a computer with the USB-C port and on the computer navigate to [install.wled.me](https://install.wled.me/). Select the version of firmware you want to install and make sure to check 'my board has ethernet'.  Press the Install button and follow the rest of the prompts.
@@ -91,3 +90,33 @@ There are a couple of ways to update the firmware on the board.  None of them us
 ```
 .\esptool-v4.2.1-win64\esptool.exe write_flash 0x10000 ./WLED_0.14.0-b0_ESP32_Ethernet.bin
 ```
+
+## How are the GPIO pins assigned?
+| Pin | V1 | V2 |
+| ------ | -- | -- |
+| GPIO00 | EN | EN |
+| GPIO01 | USB-RX | LED1 / USB-RX |
+| GPIO02 | LED5 | LED2 |
+| GPIO03 | USB-TX | LED3 / USB-TX |
+| GPIO04 | LED4 | LED4 |
+| GPIO05 | LED7 | LED5 |
+| GPIO12 | LED3 | LED6 |
+| GPIO13 | RMII EMAC RXER | RMII EMAC RXER |
+| GPIO14 | LED2 | LED7 |
+| GPIO15 | LED1 | LED8 |
+| GPIO16 | OSC EN | OSC EN |
+| GPIO17 | LED6 | H1 |
+| GPIO18 | RMII MDIO | RMII MDIO |
+| GPIO19 | RMII EMAC TXD0 | RMII EMAC TXD0 |
+| GPIO21 | RMII EMAC TXEN | RMII EMAC TXEN |
+| GPIO22 | RMII EMAC TXD1 | RMII EMAC TXD1 |
+| GPIO23 | RMII MDC | RMII MDC |
+| GPIO25 | RMII EMAC RXD0 | RMII EMAC RXD0 |
+| GPIO26 | RMII EMAC RXD1 | RMII EMAC RXD1 |
+| GPIO27 | RMII EMAC CRS DV | RMII EMAC CRS DV |
+| GPIO32 | H1 | H1 |
+| GPIO33 | LED8 | H1 |
+| GPIO34 | open | H2 |
+| GPIO35 | H6 | H3 |
+| GPIO36 | H7 | H4 |
+| GPIO39 | open | open |
