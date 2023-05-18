@@ -36,7 +36,7 @@ No, the USB-C connector can only be used for programing the board.  When you plu
 STL files can be found on thingiverse https://www.thingiverse.com/thing:5599003
 
 ## I want to make my own mount, what is the hole spacing?
-The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm x 65mm.
+The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm x 65mm.  
 ![hole spacing](./img/din_rail_holes.png)
 
 ## What are the GPIO pin assignment:
@@ -66,7 +66,7 @@ The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm
 | SCK | GPIO33 |
 
 - Configure WLED, goto Settings/UserMods, scroll down to the AudioReactive section.
-Place a check next to Enabled, Select 'Generic I2s' for type, set I2S SD to 17, Set I2S WS to 32, set I2S SCK to 33, set squelch to 10, set gain to 30, and press the 'Save' button.
+Place a check next to Enabled, Select 'Generic I2s' for type, set I2S SD to 17, Set I2S WS to 32, set I2S SCK to 33, set squelch to 10, set gain to 30, and press the 'Save' button.  
 ![WLED settings](./img/wled_sound_reactive.png)
 
 ## Where can I get the gerber files for this project?
@@ -83,7 +83,7 @@ There are a couple of ways to update the firmware on the board.  None of them us
 
 - The easiest way is to connect the board to a computer with the USB-C port and on the computer navigate to [install.wled.me](https://install.wled.me/). Select the version of firmware you want to install and make sure to check 'my board has ethernet'.  Press the Install button and follow the rest of the prompts.
 
-- If you have built or downloaded an image, and if the board is connected to your wifi or ethernet network, from a computer navigate to the WLED page in the board. Click the config button, then click the security and updates button, then click the manual OTA update button.  From here you will be able to select an image file to install.
+- If you have built or downloaded an image, and if the board is connected to your wifi or ethernet network, from a computer navigate to the WLED page in the board. Click the config button, then click the security and updates button, then click the manual OTA update button.  From here you will be able to select an image file to install.  
 ![WLED update page](./img/WLED_update_page.png)
 
 - The last way is to connect the board to a computer with the USB-C port and use [esptool](https://github.com/espressif/esptool) to flash the new firmware.  It is a command line tool.  Here is an example command we use when we flash the firmware on the boards: 
