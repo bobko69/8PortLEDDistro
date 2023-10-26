@@ -128,7 +128,7 @@ There are a couple of ways to update the firmware on the board.  None of them us
     If you are using 12v LEDs you must use a 12v power supply.
     If you are using 24v LEDs you must use a 24v power supply.
 		
-2. Next connect your LEDs to the phoenix connectors running down the middle part of the board.  The connectors can be unplugged while tightening the screws.  Make sure to connect gound the the '-' side of the connector, positive voltage to the '+' side of the connector, and data to the middle 'd' of the connector.
+2. Next connect your LEDs to the phoenix connectors running down the middle part of the board.  The connectors can be unplugged while tightening the screws.  Make sure to connect ground the the '-' side of the connector, positive voltage to the '+' side of the connector, and data to the middle 'd' of the connector.
 
 3. Double check to make sure all power and LED wires are connected correctly.
 
@@ -146,6 +146,6 @@ More things you can do:
  
 2. Turn off the 'automatic brightness limiter' under Config/LED Preferences (this setting is only needed if you power the board and LEDs off of the USB-C port, which you can not do with this board).
  
-3. Enable the ehternet port by going to Config/WiFi setup.  Enter a static IP address and gateway.  Also scroll to the bottom of the page and select 'WT32-ETH01' as the Ethernet Type.  Press save, plug in an ethernet cable, restart the board.
+3. Enable the ethernet port by going to Config/WiFi setup.  Enter a static IP address and gateway.  Also scroll to the bottom of the page and select 'WT32-ETH01' as the Ethernet Type.  Press save, plug in an ethernet cable, restart the board.
 
-Im not a WLED expert so if there other thing you want to do there are lots of totorials on youtube that explain how to join the board to your wifi network, how to make segments, how to make presets, etc.
+Im not a WLED expert, if there are other things you want to do there are lots of tutorials on youtube that explain how to join the board to your wifi network, how to make segments, how to make presets, etc.
