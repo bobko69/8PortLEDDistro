@@ -120,3 +120,32 @@ There are a couple of ways to update the firmware on the board.  None of them us
 | GPIO35 | H6 | H3 |
 | GPIO36 | H7 | H4 |
 | GPIO39 | open | open |
+
+## Quick start guide:
+
+1. Connect your power supply to the big green connector in the middle of the bottom edge of the board. Connect ground to the '-' side of the connector and +5 or +12 or +24 volts to the '+' side of the connector.
+    If you are using 5v LEDs you must use a 5v power supply.
+    If you are using 12v LEDs you must use a 12v power supply.
+    If you are using 24v LEDs you must use a 24v power supply.
+		
+2. Next connect your LEDs to the phoenix connectors running down the middle part of the board.  The connectors can be unplugged while tightening the screws.  Make sure to connect gound the the '-' side of the connector, positive voltage to the '+' side of the connector, and data to the middle 'd' of the connector.
+
+3. Double check to make sure all power and LED wires are connected correctly.
+
+4. Apply power to the board.  The board has been pre configured to run with 50 leds per port.  You should see 50 leds light up on each port you put leds on.
+   
+5. Use your phone to connect to the WIFI access point in the board.  Look to join a network called 'WLED-AP'.  Use the password 'wled1234'
+
+6. A web page will open up after you are connected.  Press the 'TO THE CONTROLS' button.  
+
+7. Press the effects button and try out all the cool LED effects.
+
+More things you can do:
+
+1. Add the correct number of LEDs you have on each port by going to Config/LED Preferences and changing the length setting on each port.
+ 
+2. Turn off the 'automatic brightness limiter' under Config/LED Preferences (this setting is only needed if you power the board and LEDs off of the USB-C port, which you can not do with this board).
+ 
+3. Enable the ehternet port by going to Config/WiFi setup.  Enter a static IP address and gateway.  Also scroll to the bottom of the page and select 'WT32-ETH01' as the Ethernet Type.  Press save, plug in an ethernet cable, restart the board.
+
+Im not a WLED expert so if there other thing you want to do there are lots of totorials on youtube that explain how to join the board to your wifi network, how to make segments, how to make presets, etc.
