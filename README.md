@@ -127,25 +127,26 @@ There are a couple of ways to update the firmware on the board.  None of them us
     If you are using 5v LEDs you must use a 5v power supply.
     If you are using 12v LEDs you must use a 12v power supply.
     If you are using 24v LEDs you must use a 24v power supply.
+   ![power in](./img/power_in.png)
 		
-2. Next connect your LEDs to the phoenix connectors running down the middle part of the board.  The connectors can be unplugged while tightening the screws.  Make sure to connect ground the the '-' side of the connector, positive voltage to the '+' side of the connector, and data to the middle 'd' of the connector.
+3. Next connect your LEDs to the phoenix connectors running down the middle part of the board.  The connectors can be unplugged while tightening the screws.  Make sure to connect ground the the '-' side of the connector, positive voltage to the '+' side of the connector, and data to the middle 'd' of the connector.  Check the marking on the PCB by these conectors to make sure you get it right!
 
-3. Double check to make sure all power and LED wires are connected correctly.
+4. Double check to make sure all power and LED wires are connected correctly.
 
-4. Apply power to the board.  The board has been pre configured to run with 50 leds per port.  You should see 50 leds light up on each port you put leds on.
+5. Apply power to the board.  The board has been pre configured to run with 50 leds per port.  You should see 50 leds light up on each port you put leds on.
    
-5. Use your phone to connect to the WIFI access point in the board.  Look to join a network called 'WLED-AP'.  Use the password 'wled1234'
+6. Use your phone to connect to the WIFI access point in the board.  Look to join a network called 'WLED-AP'.  Use the password 'wled1234'
 
-6. A web page will open up after you are connected.  Press the 'TO THE CONTROLS' button.  
+7. A web page will open up after you are connected.  Press the 'TO THE CONTROLS' button. ![to the controls](./img/to_the_controls.png)
 
-7. Press the effects button and try out all the cool LED effects.
+8. Press the effects button and try out all the cool LED effects.
 
 More things you can do:
 
-1. Add the correct number of LEDs you have on each port by going to Config/LED Preferences and changing the length setting on each port.
+1. Add the correct number of LEDs you have on each port by going to Config/LED Preferences and changing the length setting on each port. ![set length](./img/set_length.png)
  
-2. Turn off the 'automatic brightness limiter' under Config/LED Preferences (this setting is only needed if you power the board and LEDs off of the USB-C port, which you can not do with this board).
+2. Turn off the 'automatic brightness limiter' under Config/LED Preferences (this setting is only needed if you power the board and LEDs off of the USB-C port, which you can not do with this board). ![brightness limiter](./img/brightness_limiter.png)
  
-3. Enable the ethernet port by going to Config/WiFi setup.  Enter a static IP address and gateway.  Also scroll to the bottom of the page and select 'WT32-ETH01' as the Ethernet Type.  Press save, plug in an ethernet cable, restart the board.
+3. Enable the ethernet port by going to Config/WiFi setup.  Enter a static IP address and gateway.  Also scroll to the bottom of the page and select 'WT32-ETH01' as the Ethernet Type.  Press save, plug in an ethernet cable, restart the board. ![static ip gateway](./img/static_ip_gateway.png)
 
 Im not a WLED expert, if there are other things you want to do there are lots of tutorials on youtube that explain how to join the board to your wifi network, how to make segments, how to make presets, etc.
