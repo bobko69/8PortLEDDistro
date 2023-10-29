@@ -53,7 +53,7 @@ The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm
 | LED8 | GPIO33 | GPIO15 |
 
 ## How do I use audio reactive WLED?
-- Download and install this image which is built with ethernet and audio reactive: https://github.com/bobko69/8PortLEDDistro/blob/main/files/WLED_0.14.0-b6_ESP32_Ethernet_AudioReactive.bin
+- Download and install this image which is built with ethernet and audio reactive: https://github.com/bobko69/8PortLEDDistro/blob/main/files/WLED_0.14.0_ESP32_Ethernet_AudioReactive.bin
 - Wire up your microphone.  This example is for an INMP441 and PCB v2.
 
 | INMP441 | 8 Port LED Distro |
