@@ -147,6 +147,6 @@ More things you can do:
  
 2. Turn off the 'automatic brightness limiter' under Config/LED Preferences (this setting is only needed if you power the board and LEDs off of the USB-C port, which you can not do with this board). ![brightness limiter](./img/brightness_limiter.png)
  
-3. Enable the ethernet port by going to Config/WiFi setup.  Enter a static IP address and gateway.  Also scroll to the bottom of the page and select 'WT32-ETH01' as the Ethernet Type.  Press save, plug in an ethernet cable, restart the board. ![static ip gateway](./img/static_ip_gateway.png)
+3. Enable the ethernet port by going to Config/WiFi setup.  Enter a static IP address and gateway.  Also scroll to the bottom of the page and select 'WT32-ETH01' as the Ethernet Type.  Press save, plug in an ethernet cable, restart the board. ![static ip gateway](./img/static_ip_gateway.png) ![etherent type](./img/ethernet_type.png)
 
 Im not a WLED expert, if there are other things you want to do there are lots of tutorials on youtube that explain how to join the board to your wifi network, how to make segments, how to make presets, etc.
