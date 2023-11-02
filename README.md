@@ -129,7 +129,7 @@ There are a couple of ways to update the firmware on the board.  None of them us
     If you are using 24v LEDs you must use a 24v power supply.
    ![power in](./img/power_in.png)
 		
-3. Next connect your LEDs to the phoenix connectors running down the middle part of the board.  The connectors can be unplugged while tightening the screws.  Make sure to connect ground the the '-' side of the connector, positive voltage to the '+' side of the connector, and data to the middle 'd' of the connector.  Check the marking on the PCB by these conectors to make sure you get it right!
+3. Next connect your LEDs to the phoenix connectors running down the middle part of the board.  The connectors can be unplugged while tightening the screws.  Make sure to connect ground the the '-' side of the connector, positive voltage to the '+' side of the connector, and data to the middle 'd' of the connector.  Check the marking on the PCB by these conectors to make sure you get it right! ![led outputs](./img/led_outputs.png)
 
 4. Double check to make sure all power and LED wires are connected correctly.
 
@@ -156,7 +156,7 @@ This will show how to set up the LED preferences for a Version 2 PCB.  Version 1
 
 1. Press the 'CONFIG" button on the top right of the screen.  Then press  to 'LED Preferences' button.
 
-2. Scroll down to the 'Hardware setup' section.
+2. Scroll down to the 'Hardware setup' section. ![led preferences](./img/led_preferences.png)
 
 3. Next to the '1:' use the drop down to set the type of LED stip you have.
 
