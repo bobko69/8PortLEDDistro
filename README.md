@@ -150,3 +150,21 @@ More things you can do:
 3. Enable the ethernet port by going to Config/WiFi setup.  Enter a static IP address and gateway.  Also scroll to the bottom of the page and select 'WT32-ETH01' as the Ethernet Type.  Press save, plug in an ethernet cable, restart the board. ![static ip gateway](./img/static_ip_gateway.png) ![etherent type](./img/ethernet_type.png)
 
 Im not a WLED expert, if there are other things you want to do there are lots of tutorials on youtube that explain how to join the board to your wifi network, how to make segments, how to make presets, etc.
+
+## How do I set the LED preferences for each port?
+This will show how to set up the LED preferences for a Version 2 PCB.  Version 1 PCBs will have different GPIO pins.
+
+1. Press the 'CONFIG" button on the top right of the screen.  Then press  to 'LED Preferences' button.
+
+2. Scroll down to the 'Hardware setup' section.
+
+3. Next to the '1:' use the drop down to set the type of LED stip you have.
+
+4. set the  'Color Order'.  Some strips have the colors in different orders.  If the colors you select dont look right, the order can be changed.
+
+5. set the 'Length', this will be the number ofleds you have connected to the port.
+
+6. set the 'GPIO' port.  these are listed under the connector on the PCB.  For LED1 the GPIO should be set to 1. List an be found [in this section](https://github.com/bobko69/8PortLEDDistro/blob/main/README.md#what-are-the-gpio-pin-assignment).
+
+Press the '+' button to add more ports and repeat steps 3 thru 6.
+Remember to press the 'Save' button when you are done. 
