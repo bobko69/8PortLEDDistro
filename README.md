@@ -81,7 +81,7 @@ Sorry the files are not available.  This is not an open source project.
 ## How do I update the firmware?
 There are a couple of ways to update the firmware on the board.  None of them use the Arduino IDE.
 
-- The easiest way is to connect the board to a computer with the USB-C port and on the computer navigate to [install.wled.me](https://install.wled.me/). Select the version of firmware you want to install and make sure to check 'my board has ethernet'.  Press the Install button and follow the rest of the prompts.
+- The easiest way is to connect the board to a computer with the USB-C port and on the computer navigate to [install.wled.me](https://install.wled.me/). Select the version of firmware you want to install and make sure to click the 'Ethernet' button.  Press the Install button and follow the rest of the prompts.  When flashing is done you will see a 'WIFI Configuration' Promt.  DO NOT answer this if you plan on controlling WLED with etherent or with the WLED-AP.
 
 - If you have built or downloaded an image, and if the board is connected to your wifi or ethernet network, from a computer navigate to the WLED page in the board. Click the config button, then click the security and updates button, then click the manual OTA update button.  From here you will be able to select an image file to install.  
 ![WLED update page](./img/WLED_update_page.png)
@@ -160,11 +160,25 @@ This will show how to set up the LED preferences for a Version 2 PCB.  Version 1
 
 3. Next to the '1:' use the drop down to set the type of LED stip you have.
 
-4. set the  'Color Order'.  Some strips have the colors in different orders.  If the colors you select dont look right, the order can be changed.
+4. Set the  'Color Order'.  Some strips have the colors in different orders.  If the colors you select dont look right, the order can be changed.
 
-5. set the 'Length', this will be the number ofleds you have connected to the port.
+5. Set the 'Length', this will be the number ofleds you have connected to the port.
 
-6. set the 'GPIO' port.  these are listed under the connector on the PCB.  For LED1 the GPIO should be set to 1. List an be found [in this section](https://github.com/bobko69/8PortLEDDistro/blob/main/README.md#what-are-the-gpio-pin-assignment).
+6. Set the 'GPIO' port.  These are listed under the connector on the PCB.  For LED1 the GPIO should be set to 1. List can be found [in this section](https://github.com/bobko69/8PortLEDDistro/blob/main/README.md#what-are-the-gpio-pin-assignment).
 
 Press the '+' button to add more ports and repeat steps 3 thru 6.
 Remember to press the 'Save' button when you are done. 
+
+## I no longer see the WLED-AP to connect to
+Once you configure the board to connect to your wifi network or you configure the ethernet port and plug in an ethernet cable, the WLED-AP access point will not turn on when you power cycle the board.  There are a few things you can do:
+
+1. If you want to keep accessing the board with the WLED-AP dont configure the wifi to connect to your home network.
+
+2. Unplug the ethernet cable and power cycle.  If the board can not make a network connection with the ethernet, it will turn on the WLED-AP.
+
+3. If you did connect the board to your home wifi, then you should try to access it through your home wifi.  You will need to know the ip address of the board on your network.  Type the ip address into a browser and the configuration page for the board will appear.  Either give the board a static ip address when you configure the wifi setup, or go into your home router and find the ip address assigned to it.
+
+4. If you cant find the ip address of the board, you can download the WLED app to your phone.  There is both and IOS and android version.  The app will poll your home network and find any devices running WLED.  When it finds the board you can connect to it in the app.
+
+## How do I do power injection?
+I am not an expert in power injection, and I try to avoid using it.  If a string is getting to long I will split it up and use 2 ports.  First off, you will need a big power supply to power both the 8 Port led distro and a [fuse block like this](https://www.amazon.com/dp/B07GBV2MHN).  The 8 Port LED Distro and the fuse block must be connected to the same power supply.  If you use two power supplies you will have troubles.  Connect power and data from the 8 Port LED Distro to the first strip of LEDs in the string.  Connect power from the fuse block to the second strip of LEDs in the string.  Connect power from the fuse block to the 3rd, 4th, 5th, etc... strip of LEDs in the string.  You may need to inject power more often depending on how dense your leds are. (I know a pretty picture here would help a lot, so when I find one I will add it here.)
