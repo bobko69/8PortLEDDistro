@@ -145,7 +145,7 @@ More things you can do:
 
 1. Add the correct number of LEDs you have on each port by going to Config/LED Preferences and changing the length setting on each port. ![set length](./img/set_length.png)
  
-2. Turn off the 'automatic brightness limiter' under Config/LED Preferences (this setting is only needed if you power the board and LEDs off of the USB-C port, which you can not do with this board). ![brightness limiter](./img/brightness_limiter.png)
+2. I usually turn off the 'automatic brightness limiter' under Config/LED Preferences, but if you want to play it safe take the amp output of your power supply and multiply it by 1000.  so for a 30amp power supply enter 30000.  (I think this setting is only needed if you power the board and LEDs off of the USB-C port, which you can not do with this board). ![brightness limiter](./img/brightness_limiter.png)
  
 3. Enable the ethernet port by going to Config/WiFi setup.  Enter a static IP address and gateway.  Also scroll to the bottom of the page and select 'WT32-ETH01' as the Ethernet Type.  Press save, plug in an ethernet cable, restart the board. ![static ip gateway](./img/static_ip_gateway.png) ![etherent type](./img/ethernet_type.png)
 
