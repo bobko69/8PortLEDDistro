@@ -189,3 +189,24 @@ You can and that will be fine, but if you are pulling more than 5 amps you proba
 
 ## I'm seeing random flickering on some of my LED stings.
 Flickering can be caused by many things and can be very hard to diagnose.  It could be from a grounding problem, needing more power injection, a long distance of wire before the first pixel, resistance in the line, or any number of weird unforeseen things.  2 things I have found to work are using data boosters like an [F-amp](https://pixelcontroller.com/store/accessories/53-famp.html) (there are many vendors that sell similar items) and wrapping a ferrite ring on the data line. [ferrite example video](https://www.youtube.com/watch?v=6O5rD1BZeVc) ![ferrite ring](./img/ferrite_ring.png)
+
+## How do I add a DS18B20 temperature sensor?
+- Download and install this image which is built with ethernet and the Dallas temperature sensor: https://github.com/bobko69/8PortLEDDistro/blob/main/files/WLED_0.14.1-b3_ESP32_Ethernet_DallasTempSensor.bin
+- Check to make sure the GPIO pin is set to 33 under config/usermods.
+
+  ![temp sensor](./img/temp_sensor_1.png)
+- Add a 5 pin female header to H1.
+
+  ![temp sensor](./img/temp_sensor_2.png)
+- Use a 5 pin male header, remove pin 2 and pin 3.
+
+  ![temp sensor](./img/temp_sensor_3.png)
+- Add the DS18B20 (flat side of sensor is facing up) and a 4.7KΩ resistor as shown in the following photo:
+
+  ![temp sensor](./img/temp_sensor_4.png)
+- Turn off power, Plug into the 5 pin female header, apply power.
+
+  ![temp sensor](./img/temp_sensor_5.png)
+- You should now see the temperature in the info tab.
+
+  ![temp sensor](./img/temp_sensor_6.png)
