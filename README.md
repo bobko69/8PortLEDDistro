@@ -182,13 +182,16 @@ Once you configure the board to connect to your wifi network or you configure th
 
 ## How do I do power injection?
 I am not an expert in power injection, and I try to avoid using it.  If a string is getting too long I will split it up and use 2 ports.  First off, you will need a big power supply to power both the 8 Port led distro and a [fuse block like this](https://www.amazon.com/dp/B07GBV2MHN).  The 8 Port LED Distro and the fuse block must be connected to the same power supply.  If you use two power supplies you will have troubles.  Connect power and data from the 8 Port LED Distro to the start of first strip of LEDs in the string.  Connect power from the fuse block to the start of the second strip of LEDs in the string.  Connect power from the fuse block to the start of the 3rd, 4th, 5th, etc... strip of LEDs in the string.  You may need to inject power more often depending on how dense your leds are.
+
 ![power injection](./img/power_injection_sm.png)
 
 ## Can I replace the 5 amp fuses with 10 amp fuses.
 You can and that will be fine, but if you are pulling more than 5 amps you probably need to split the string and use 2 ports or you need to use power injection.
 
 ## I'm seeing random flickering on some of my LED stings.
-Flickering can be caused by many things and can be very hard to diagnose.  It could be from a grounding problem, needing more power injection, a long distance of wire before the first pixel, resistance in the line, or any number of weird unforeseen things.  2 things I have found to work are using data boosters like an [F-amp](https://pixelcontroller.com/store/accessories/53-famp.html) (there are many vendors that sell similar items) and wrapping a ferrite ring on the data line. [ferrite example video](https://www.youtube.com/watch?v=6O5rD1BZeVc) ![ferrite ring](./img/ferrite_ring.png)
+Flickering can be caused by many things and can be very hard to diagnose.  It could be from a grounding problem, needing more power injection, a long distance of wire before the first pixel, resistance in the line, or any number of weird unforeseen things.  2 things I have found to work are using data boosters like an [F-amp](https://pixelcontroller.com/store/accessories/53-famp.html) (there are many vendors that sell similar items) and wrapping a ferrite ring on the data line. [ferrite example video](https://www.youtube.com/watch?v=6O5rD1BZeVc)
+
+![ferrite ring](./img/ferrite_ring.png)
 
 ## How do I add a DS18B20 temperature sensor?
 - Download and install this image which is built with ethernet and the Dallas temperature sensor: https://github.com/bobko69/8PortLEDDistro/blob/main/files/WLED_0.14.1-b3_ESP32_Ethernet_DallasTempSensor.bin
@@ -210,3 +213,13 @@ Flickering can be caused by many things and can be very hard to diagnose.  It co
 - You should now see the temperature in the info tab.
 
   ![temp sensor](./img/temp_sensor_6.png)
+
+## How do you test the boards before shipping?
+The first test we do is flashing the WLED firmware onto the board, this checks if the USB-C port is working.  We flash a special config file at this time that has 150 leds configured on each of the 8 ports.  it also sets up the ip address and ethernet port.
+Next we use our test fixture to connect to the board with the ethernet port and try running some effects, this test the ethernet port and also all 8 LED output ports.  At this point we upload the config file that we ship the boards with.
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=qrvC3uFBEQM
+" target="_blank"><img src="http://img.youtube.com/vi/qrvC3uFBEQM/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+Last we remove the etherenet cable and power cycle the board.  Now we connect to the board with wifi and make sure things still work.  This test to make sure the wifi works correctly
