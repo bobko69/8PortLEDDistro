@@ -65,6 +65,8 @@ The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm
 | WS | GPIO32 |
 | SCK | GPIO33 |
 
+![INMP441 connection](./img/audio_reactive_1.png)
+
 - Configure WLED, goto Settings/UserMods, scroll down to the AudioReactive section.
 Place a check next to Enabled, Select 'Generic I2s' for type, set I2S SD to 17, Set I2S WS to 32, set I2S SCK to 33, set squelch to 10, set gain to 30, and press the 'Save' button.  
 ![WLED settings](./img/wled_sound_reactive.png)
