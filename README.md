@@ -225,3 +225,17 @@ Next we use our test fixture to connect to the board with the ethernet port and 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 Last we remove the etherenet cable and power cycle the board.  Now we connect to the board with wifi and make sure things still work.  This test to make sure the wifi works correctly
+
+## How do I install ESPixelStick?
+- Download and unzip the latest dist.zip release of ESPixelStick from here: [github link to dist.zip](https://github.com/MartinMueller2003/ESPixelStick/releases/tag/dist)
+- Connect the 8 Port LED Distro to your computer with an USB-C cable
+- Run the ESPSFlashTool.jar.  You will need java 8 installed for this to run.
+- In the hardware dropdown select 'ESP32 BONG 69'
+- In the Serial Port dropdown select the com port that says 'USB-SERIAL CH340'
+- Fill in the SSID and Passphrase to connect to your home wifi
+- Fill in the IP Address, Subnet Mask and Gateway so you will have an easier time finding the ESPixelStick config page.
+
+![ESPixelStick](./img/ESPixelStick.png)
+
+- Press the Flash Device button and wait for the firmware to finish flashing.
+- Point your browser to the ip address you set to finish setting up ESPixelStick.
