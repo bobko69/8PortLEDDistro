@@ -238,4 +238,5 @@ Last we remove the etherenet cable and power cycle the board.  Now we connect to
 ![ESPixelStick](./img/ESPixelStick.png)
 
 - Press the Flash Device button and wait for the firmware to finish flashing.
+- Unplug the USB-C and power up the board with the big power connector.
 - Point your browser to the ip address you set to finish setting up ESPixelStick.
