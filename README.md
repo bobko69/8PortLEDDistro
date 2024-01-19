@@ -226,7 +226,7 @@ Next we use our test fixture to connect to the board with the ethernet port and 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=qrvC3uFBEQM
 " target="_blank"><img src="http://img.youtube.com/vi/qrvC3uFBEQM/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+width="400" /></a>
 
 Last we remove the etherenet cable and power cycle the board.  Now we connect to the board with wifi and make sure things still work.  This test to make sure the wifi works correctly
 
