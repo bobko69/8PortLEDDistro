@@ -34,15 +34,18 @@ No, the USB-C connector can only be used for programing the board.  When you plu
 
 ## Where can I get the STL files for the CG1500 / DIN rail mount?
 STL files can be found on thingiverse https://www.thingiverse.com/thing:5599003
-![CG1500](./img/IMG_3282sm.jpg)
+
+<img src="./img/IMG_3282sm.jpg" width="400">
 
 ## Where can I get the STL files for mounting in a MTM AC30C-11 case?
 STL files and instructions can be found on thingiverse https://www.thingiverse.com/thing:6442204
-![MTM AC30C-11](./img/IMG_3964.png)
+
+<img src="./img/IMG_3964.png" width="400">
 
 ## I want to make my own mount, what is the hole spacing?
-The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm x 65mm.  
-![hole spacing](./img/din_rail_holes.png)
+The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm x 65mm.
+
+<img src="./img/din_rail_holes.png" width="400">
 
 ## What are the GPIO pin assignment:
 
@@ -144,17 +147,17 @@ There are a couple of ways to update the firmware on the board.  None of them us
    
 6. Use your phone to connect to the WIFI access point in the board.  Look to join a network called 'WLED-AP'.  Use the password 'wled1234'
 
-7. A web page will open up after you are connected.  Press the 'TO THE CONTROLS' button. ![to the controls](./img/to_the_controls.png)
+7. A web page will open up after you are connected.  Press the 'TO THE CONTROLS' button. <br> <img src="./img/to_the_controls.png" width="400">
 
 8. Press the effects button and try out all the cool LED effects.
 
 More things you can do:
 
-1. Add the correct number of LEDs you have on each port by going to Config/LED Preferences and changing the length setting on each port. ![set length](./img/set_length.png)
+1. Add the correct number of LEDs you have on each port by going to Config/LED Preferences and changing the length setting on each port. <br> <img src="./img/set_length.png" width="400">
  
-2. I usually turn off the 'automatic brightness limiter' under Config/LED Preferences, but if you want to play it safe take the amp output of your power supply and multiply it by 1000.  so for a 30amp power supply enter 30000.  (I think this setting is only needed if you power the board and LEDs off of the USB-C port, which you can not do with this board). ![brightness limiter](./img/brightness_limiter.png)
+2. I usually turn off the 'automatic brightness limiter' under Config/LED Preferences, but if you want to play it safe take the amp output of your power supply and multiply it by 1000.  so for a 30amp power supply enter 30000.  (I think this setting is only needed if you power the board and LEDs off of the USB-C port, which you can not do with this board). <br> <img src="./img/brightness_limiter.png" width="400">
  
-3. Enable the ethernet port by going to Config/WiFi setup.  Enter a static IP address and gateway.  Also scroll to the bottom of the page and select 'WT32-ETH01' as the Ethernet Type.  Press save, plug in an ethernet cable, restart the board. ![static ip gateway](./img/static_ip_gateway.png) ![etherent type](./img/ethernet_type.png)
+3. Enable the ethernet port by going to Config/WiFi setup.  Enter a static IP address and gateway.  Also scroll to the bottom of the page and select 'WT32-ETH01' as the Ethernet Type.  Press save, plug in an ethernet cable, restart the board. <br> <img src="./img/static_ip_gateway.png" width="400"> <br> <img src="./img/ethernet_type.png" width="400">
 
 Im not a WLED expert, if there are other things you want to do there are lots of tutorials on youtube that explain how to join the board to your wifi network, how to make segments, how to make presets, etc.
 
@@ -163,7 +166,7 @@ This will show how to set up the LED preferences for a Version 2 PCB.  Version 1
 
 1. Press the 'CONFIG" button on the top right of the screen.  Then press  to 'LED Preferences' button.
 
-2. Scroll down to the 'Hardware setup' section. ![led preferences](./img/led_preferences.png)
+2. Scroll down to the 'Hardware setup' section. <br> <img src="./img/led_preferences.png" width="400">
 
 3. Next to the '1:' use the drop down to set the type of LED stip you have.
 
@@ -188,17 +191,13 @@ Once you configure the board to connect to your wifi network or you configure th
 4. If you cant find the ip address of the board, you can download the WLED app to your phone.  There is both an IOS and android version.  The app will poll your home network and find any devices running WLED.  When it finds the board you can connect to it in the app.
 
 ## How do I do power injection?
-I am not an expert in power injection, and I try to avoid using it.  If a string is getting too long I will split it up and use 2 ports.  First off, you will need a big power supply to power both the 8 Port led distro and a [fuse block like this](https://www.amazon.com/dp/B07GBV2MHN).  The 8 Port LED Distro and the fuse block must be connected to the same power supply.  If you use two power supplies you will have troubles.  Connect power and data from the 8 Port LED Distro to the start of first strip of LEDs in the string.  Connect power from the fuse block to the start of the second strip of LEDs in the string.  Connect power from the fuse block to the start of the 3rd, 4th, 5th, etc... strip of LEDs in the string.  You may need to inject power more often depending on how dense your leds are.
-
-![power injection](./img/power_injection_sm.png)
+I am not an expert in power injection, and I try to avoid using it.  If a string is getting too long I will split it up and use 2 ports.  First off, you will need a big power supply to power both the 8 Port led distro and a [fuse block like this](https://www.amazon.com/dp/B07GBV2MHN).  The 8 Port LED Distro and the fuse block must be connected to the same power supply.  If you use two power supplies you will have troubles.  Connect power and data from the 8 Port LED Distro to the start of first strip of LEDs in the string.  Connect power from the fuse block to the start of the second strip of LEDs in the string.  Connect power from the fuse block to the start of the 3rd, 4th, 5th, etc... strip of LEDs in the string.  You may need to inject power more often depending on how dense your leds are. <br> <img src="./img/power_injection_sm.png" width="400">
 
 ## Can I replace the 5 amp fuses with 10 amp fuses.
 You can and that will be fine, but if you are pulling more than 5 amps you probably need to split the string and use 2 ports or you need to use power injection.
 
 ## I'm seeing random flickering on some of my LED stings.
-Flickering can be caused by many things and can be very hard to diagnose.  It could be from a grounding problem, needing more power injection, a long distance of wire before the first pixel, resistance in the line, or any number of weird unforeseen things.  2 things I have found to work are using data boosters like an [F-amp](https://pixelcontroller.com/store/accessories/53-famp.html) (there are many vendors that sell similar items) and wrapping a ferrite ring on the data line. [ferrite example video](https://www.youtube.com/watch?v=6O5rD1BZeVc)
-
-![ferrite ring](./img/ferrite_ring.png)
+Flickering can be caused by many things and can be very hard to diagnose.  It could be from a grounding problem, needing more power injection, a long distance of wire before the first pixel, resistance in the line, or any number of weird unforeseen things.  2 things I have found to work are using data boosters like an [F-amp](https://pixelcontroller.com/store/accessories/53-famp.html) (there are many vendors that sell similar items) and wrapping a ferrite ring on the data line. [ferrite example video](https://www.youtube.com/watch?v=6O5rD1BZeVc) <br> <img src="./img/ferrite_ring.png" width="400">
 
 ## How do I add a DS18B20 temperature sensor?
 - Download and install this image which is built with ethernet and the Dallas temperature sensor: https://github.com/bobko69/8PortLEDDistro/blob/main/files/WLED_0.14.1-b3_ESP32_Ethernet_DallasTempSensor.bin
@@ -238,10 +237,7 @@ Last we remove the etherenet cable and power cycle the board.  Now we connect to
 - In the hardware dropdown select 'ESP32 BONG 69'
 - In the Serial Port dropdown select the com port that says 'USB-SERIAL CH340'
 - Fill in the SSID and Passphrase to connect to your home wifi
-- Fill in the IP Address, Subnet Mask and Gateway so you will have an easier time finding the ESPixelStick config page.
-
-![ESPixelStick](./img/ESPixelStick.png)
-
+- Fill in the IP Address, Subnet Mask and Gateway so you will have an easier time finding the ESPixelStick config page. <br> <img src="./img/ESPixelStick.png" width="400">
 - Press the Flash Device button and wait for the firmware to finish flashing.
 - Unplug the USB-C and power up the board with the big power connector.
 - Point your browser to the ip address you set to finish setting up ESPixelStick.
