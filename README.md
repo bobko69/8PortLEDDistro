@@ -40,7 +40,7 @@ STL files can be found on thingiverse https://www.thingiverse.com/thing:5599003
 ## Where can I get the STL files for mounting in a MTM AC30C-11 case?
 STL files and instructions can be found on thingiverse https://www.thingiverse.com/thing:6442204
 
-<img src="./img/IMG_3964.png" width="400">
+<img src="./img/IMG_3977.png" width="400">
 
 ## I want to make my own mount, what is the hole spacing?
 The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm x 65mm.
