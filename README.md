@@ -241,3 +241,18 @@ Last we remove the etherenet cable and power cycle the board.  Now we connect to
 - Press the Flash Device button and wait for the firmware to finish flashing.
 - Unplug the USB-C and power up the board with the big power connector.
 - Point your browser to the ip address you set to finish setting up ESPixelStick.
+
+## How do I add the 8 Port LED Distro to xLights?
+- On the Controllers tab, press the 'Add Ethernet' button <br> <img src="./img/xlights_set_up_1.png" width="800">
+- Enter the IP Address for the 8 Port LED Distro
+- Give it a Name and Description
+- Select WLED for the Vendor
+- Select WLED for the Model
+- Select Generic ESP32 for the Variant
+- Give it an ID number (I usally use the last digits of the IP address)
+- Select DDP for the Protocol
+- Uncheck 'Keep Channel Numbers'
+- Press the Visualise button (bottom middle of screen) <br> <img src="./img/xlights_set_up_2.png" width="800">
+- Drag your models to the ports
+- Close the window
+- Make sure to press the Save button (up in the top left)
