@@ -256,3 +256,6 @@ Last we remove the etherenet cable and power cycle the board.  Now we connect to
 - Drag your models to the ports
 - Close the window
 - Make sure to press the Save button (up in the top left)
+
+## Where can I find the driver for the USB-C port?
+The USB-C port used the CH340 driver.  You can find the windows and mac driver here. [CH340 driver](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all)
