@@ -9,6 +9,14 @@ This is an 8 port ESP32 based LED distro board running WLED. Distributing both p
 ## Where can I get one?
 You can purchase the 8 Port LED Distro in our [Tindie store](https://www.tindie.com/products/27884/).
 
+## What's new in version 3?
+- Resettable fuses are now used on LED power outputs with 4A hold / 8A trip
+- Added a blue LED good fuse indicator next to each fuse.  This helps to tell if a fuse is tripped.
+- 33 ohm resistor now on each output data line. (was 100 ohm before)
+- Added a mosfet to GPIO1 and GPIO3.  These lines are shared for LED data lines and the USB-C port.
+- Power LED indicator leds are all green now. (one of them was blue before)
+- GPIO39 was added to the H1 header
+ 
 ## What's new in version 2?
 - All the components of the WT32-ETH01 have been moved down to the main PCB.
 - A new step up/down converter is used to turn 5v, 12v and 24v into 5v needed for the level shifter.
