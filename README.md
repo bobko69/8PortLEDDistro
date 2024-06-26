@@ -1,5 +1,5 @@
 # 8 Port LED Distro
-![8 Port LED Distro Version 1](./img/8_Port_LED_Distro_V1andV2.png)
+![8 Port LED Distro Version 1](./img/8PortLedDistor_all3.jpg)
 
 This document will serve as a place to answer questions about the 8 Port LED Distro.
 
