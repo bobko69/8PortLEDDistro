@@ -28,7 +28,7 @@ You can purchase the 8 Port LED Distro in our [Tindie store](https://www.tindie.
 - The GPIO mapping for the LED ports has been rearranged.  It should be easier to remember what they are.
 
 ## How do I hook up a relay?
-On the board by the USB-C connector there is a header labeled H1 with 5V, IO32 and GND. IO32 can be used as an output to control an external relay. I would follow this tutorial https://esp32io.com/tutorials/esp32-relay and connect 5V for DC+, GND to DC-, and IO32 to IN. You will have to do some configuration in WLED to tell it what port the relay is on.
+On the board there is a header labeled H1 use IO32 as an output to control an external relay.  You can use header H4 to pull 5v and GND (hidding behind the ethernet port).  I would follow this tutorial https://esp32io.com/tutorials/esp32-relay and connect 5V for DC+, GND to DC-, and IO32 to IN. You will have to do some configuration in WLED to tell it what port the relay is on.
 
 ## Can a relay be used to turn the board on and off?
 No, a relay can not be used to turn the board on and off.  There is only 1 power input for the board if you use a relay to turn the power off the esp32 will also turn off and you will not have a way to tell the relay to turn the board back on.  I personally use the kasa smart plugs to turn my controllers on and off. https://www.amazon.com/Kasa-Smart-Required-Certified-EP10P4/dp/B091FXLMS8 way less wiring hassle and has a really nice web interface for scheduling. I have mine turn on at dusk and off at 11pm every night.
