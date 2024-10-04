@@ -7,7 +7,7 @@ This document will serve as a place to answer questions about the 8 Port LED Dis
 This is an 8 port ESP32 based LED distro board running WLED. Distributing both power and data in 1 board. The WT32-ETH01 provides support for Wi-Fi or ethernet connections. It can be used with either 5v or 12v or 24v LED pixels. Also includes a USB-C port for easy programming.
 
 ## Where can I get one?
-You can purchase the 8 Port LED Distro in our [Tindie store](https://www.tindie.com/products/27884/).
+You can purchase the 8 Port LED Distro in our [Tindie store](https://www.tindie.com/products/27884/) and [Wasatch Lights](https://wasatchlights.com/products/bong-69-controller-priority-shipping-included).
 
 ## What's new in version 3?
 - Resettable fuses are now used on LED power outputs with 4A hold / 8A trip
