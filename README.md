@@ -39,6 +39,7 @@ No, the USB-C connector can only be used for programing the board.  When you plu
 ## What are the dimensions of the board?
 - Version 1: 110mm x 70mm x 30mm
 - Version 2: 110mm x 70mm x 25mm
+- Version 3: 110mm x 70mm x 25mm
 
 ## Where can I get the STL files for the CG1500 / DIN rail mount?
 STL files can be found on thingiverse https://www.thingiverse.com/thing:5599003
