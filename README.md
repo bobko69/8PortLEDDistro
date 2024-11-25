@@ -268,3 +268,12 @@ Last we remove the etherenet cable and power cycle the board.  Now we connect to
 
 ## Where can I find the driver for the USB-C port?
 The USB-C port used the CH340 driver.  You can find the windows and mac driver here. [CH340 driver](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all)
+
+## I cant assign GPIO14 and GPIO15 after loading firmware version 0.15.x
+GPIO14 and GPIO15 are assigned to the digital mic in version 0.15.x. ![temp sensor](./img/audioreactive_settings_v15.png)
+- Go to settings/usermods
+- In the AudioReactive section reassign I2S WS to ports 35 and I2S SCK 34.
+- Press the save button.
+- Re-boot the board.
+- Now you should be able to assign GPIO14 and GPIO15 to output ports.
+
