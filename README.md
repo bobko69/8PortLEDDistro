@@ -272,7 +272,7 @@ The USB-C port used the CH340 driver.  You can find the windows and mac driver h
 ## I cant assign GPIO14 and GPIO15 after loading firmware version 0.15.x
 GPIO14 and GPIO15 are assigned to the digital mic in version 0.15.x. ![temp sensor](./img/audioreactive_settings_v15.png)
 - Go to settings/usermods
-- In the AudioReactive section reassign I2S WS to ports 35 and I2S SCK 34.
+- In the AudioReactive section reassign I2S SD to port 17, I2S WS to ports 32 and I2S SCK to port 33.
 - Press the save button.
 - Re-boot the board.
 - Now you should be able to assign GPIO14 and GPIO15 to output ports.
