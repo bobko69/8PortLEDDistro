@@ -31,7 +31,7 @@ You can use the online installer to install the ESPixelStick firmware on your 8 
 - Press the save button
 
 ## DMX Addressing Your Devices
-In this example I'm using 2 of the 10 channel SHEHDS RGBWA+UV LED PARs.  Since this is a 10 channel fixtures i will set the address of the first fixture to address 1 and the second fixture to address 11.  If i had a third fixture it would have address 21 and a forth would have address 31.  The first address must be 1 and the rest of the addresses must be sequential with no gaps between fixtures.
+In this example I'm using 2 of the 10 channel [SHEHDS RGBWA+UV](https://shehds.com/products/led-flat-par-7x12w-7x18w-rgbwauv-lighting) LED PARs.  Since this is a 10 channel fixtures i will set the address of the first fixture to address 1 and the second fixture to address 11.  If i had a third fixture it would have address 21 and a forth would have address 31.  The first address must be 1 and the rest of the addresses must be sequential with no gaps between fixtures.
 
 ## xLights Settings
 <img src="./img/xlights_dmx_controllers.png" width="800">
