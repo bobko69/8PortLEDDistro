@@ -1,8 +1,38 @@
+# 8 Port LED Distro DMX Output
+
 DMX Output is posible on the 8 Port LED Distro.  You need to install ESPixelStick firmware.  ESPixelStick allows you to change one of the outputs to output the DMX protocol.
 
 ## Hardware setup
-## ESPixelStick Install
-		https://espixelstickwebflasher.from-ct.com:5000/
+Need to add some cool stuff in here about the hardware needed and how to hook it all up. TBD later.
+
+## ESPixelStick Firmware Install
+You can use the online installer to install the ESPixelStick firmware on your 8 Port LED Distro.  Use a USB-C cable to connect your 8 Port LED Distro to a computer.  Open a browser to the online installer: https://espixelstickwebflasher.from-ct.com:5000/
+<img src="./img/espixelstick_version.png" width="400">
+
+- Under verion pick a 4.0 version
+- Under platform pick 'ESP32 BONG 69'
+<img src="./img/espixelstick_ipaddress.png" width="400">
+
+- Uncheck use DHCP and give your board an ipaddress, netmast, gateway, and primary dns.
+- Press the flash device button.
+- Follow the prompts till firmware installation is complete.
+- Unplug the USB-C cable.
+- Plug in an ethernet cable
+- Power up the 8 Port LED Distro
+ 
 ## ESPixelStick Setup
+<img src="./img/espixelstick_device_setup.png" width="400">
+
+- Use a web browser to connect to the board using the ipaddress you gave the board in the previous step.
+- Click on the Device Setup tab
+- Set the primary input to DDP
+- Set output 8 to DMX
+- Change channel count to 510
+- Press the save button
+
 ## DMX Addressing Your Devices
+In this example I'm using 2 of the 10 channel SHEHDS RGBWA+UV LED PARs.  Since this is a 10 channel fixtures i will set the address of the first fixture to address 1 and the second fixture to address 11.  If i had a third fixture it would have address 21 and a forth would have address 31.  The first address must be 1 and the rest of the addresses must be sequential with no gaps between fixtures.
+
 ## xLights Settings
+
+## Testing
