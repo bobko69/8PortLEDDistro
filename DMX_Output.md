@@ -27,7 +27,7 @@ You can use the online installer to install the ESPixelStick firmware on your 8 
 - Follow the prompts till firmware installation is complete.
 - Unplug the USB-C cable.
 - Plug in an ethernet cable
-- Plug in the XY-485 addaptor cable you made above
+- Plug in the XY-485 addaptor cable you made above into LED Port 8
 - Power up the 8 Port LED Distro
  
 ## ESPixelStick Setup
