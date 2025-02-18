@@ -1,9 +1,18 @@
 # 8 Port LED Distro DMX Output
 
 DMX Output is posible on the 8 Port LED Distro.  You need to install ESPixelStick firmware.  ESPixelStick allows you to change one of the outputs to use the DMX protocol.
+This video has more detail about DMX and the xlights set up: (https://youtube.com/watch?v=aNw_iXwn4mw&si=04DVH85MfxVccUhA)
 
 ## Hardware setup
-Need to add some cool stuff in here about the hardware needed and how to hook it all up. TBD later.
+You can make a DMX cable with the XY-485 a TTL to RS485 addaptor.  This addaptor is avialable on amazon and aliexpress.
+
+<img src="./img/XY-485_both_outlines_sm.png" width="400">
+
+There are lots of RS485 adaptors.  Make sure to get the one labeled 'XY-485' and '3.3-33V'.  The step down converter will convert an input voltage of 5v-24v down to the 3.3v this circuit needs.
+
+<img src="./img/XY-485_hookup.png" width="400">
+
+This diagram shows the needed connections for the addaptor board.
 
 ## ESPixelStick Firmware Install
 You can use the online installer to install the ESPixelStick firmware on your 8 Port LED Distro.  Use a USB-C cable to connect your 8 Port LED Distro to a computer.  Open a browser to the online installer: https://espixelstickwebflasher.from-ct.com:5000/
@@ -18,6 +27,7 @@ You can use the online installer to install the ESPixelStick firmware on your 8 
 - Follow the prompts till firmware installation is complete.
 - Unplug the USB-C cable.
 - Plug in an ethernet cable
+- Plug in the XY-485 addaptor cable you made above
 - Power up the 8 Port LED Distro
  
 ## ESPixelStick Setup
