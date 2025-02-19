@@ -8,7 +8,7 @@ You can make a DMX cable with the XY-485 a TTL to RS485 adapter.  This adapter i
 
 <img src="./img/XY-485_both_outlines_sm.png" width="400">
 
-There are lots of RS485 adaptors.  Make sure to get the one labeled 'XY-485' and '3.3-33V'.  The step down converter will convert an input voltage of 5v-24v down to the 3.3v this circuit needs.
+There are lots of RS485 adapters.  Make sure to get the one labeled 'XY-485' and '3.3-33V'.  The step down converter will convert an input voltage of 5v-24v down to the 3.3v this circuit needs.
 
 <img src="./img/XY-485_hookup.png" width="400">
 
