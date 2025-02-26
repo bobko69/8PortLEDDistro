@@ -283,3 +283,5 @@ GPIO14 and GPIO15 are assigned to the digital mic in version 0.15.x.
 - Re-boot the board.
 - Now you should be able to assign GPIO14 and GPIO15 to output ports.
 
+## How can I control DMX lights
+The 8 Port LED Distro can control DMX lights if you install ESPixelStick firmware and with a DMX adapter.  Instructions for making this adapter and how to set it up can be found here: https://github.com/bobko69/DMX_Adapter
