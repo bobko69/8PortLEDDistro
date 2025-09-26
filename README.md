@@ -286,7 +286,7 @@ GPIO14 and GPIO15 are assigned to the digital mic in version 0.15.x.
 ## Can I control DMX lights with the 8 Port LED Distro?
 The 8 Port LED Distro can control DMX lights if you install ESPixelStick firmware and with a DMX adapter.  Instructions for making this adapter and how to set it up can be found here: https://github.com/bobko69/DMX_Adapter
 
-## Where can i get the config file the board ships with?
+## Can I get the config file the board ships with?
 Here are the config files we load on to the board before we ship it to you:
 - version 0.14 config file: https://github.com/bobko69/8PortLEDDistro/blob/main/files/wled_cfg_SHIP_0.14.x.json
 - version 0.15 config file: https://github.com/bobko69/8PortLEDDistro/blob/main/files/wled_cfg_SHIP_0.15.x.json
