@@ -21,7 +21,7 @@ If you have 5v or 12v pixels you can use Version 3.  If you are using 24v pixels
 - Through hole input capacitor was replaced with 3 smd capacitors.
 - Toned down the brightness of the blue fuse indicator leds.
 - Now works with 36v pixels like Govee and 48v pixels like JellyFish.
-- 
+
 ## What's new in version 3?
 - Resettable fuses are now used on LED power outputs with 4A hold / 8A trip
 - Added a blue LED good fuse indicator next to each fuse.  This helps to tell if a fuse is tripped.
