@@ -9,10 +9,10 @@ This is an 8 port ESP32 based LED distro board running WLED. Distributing both p
 ## Where can I get one?
 You can purchase the 8 Port LED Distro in our [Tindie store](https://www.tindie.com/products/27884/) and [Wasatch Lights](https://wasatchlights.com/products/bong-69-controller-priority-shipping-included).
 
-##Which version should I get?
+## Which version should I get?
 If you have 5v or 12v pixels you can use Version 3.  If you are using 24v pixels you should now use Version 4.  Version 4 is more robust with higher voltages.  If you have 12v, 24v, 36v or 48V pixels can use Version 4.  We are not making any more Version 3 boards.
 
-##What's new in Version 4?
+## What's new in Version 4?
 - Works with input voltages from 12v to 48v.
 - Dropping support for 5v pixels.
 - 5A replaceable fuses are now used on LED power outputs.
