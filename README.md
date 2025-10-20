@@ -1,5 +1,5 @@
 # 8 Port LED Distro
-![8 Port LED Distro Version 1](./img/8PortLedDistor_all3.jpg)
+![8 Port LED Distro Version 1](./img/all_4_versions.png)
 
 This document will serve as a place to answer questions about the 8 Port LED Distro.
 
@@ -9,6 +9,19 @@ This is an 8 port ESP32 based LED distro board running WLED. Distributing both p
 ## Where can I get one?
 You can purchase the 8 Port LED Distro in our [Tindie store](https://www.tindie.com/products/27884/) and [Wasatch Lights](https://wasatchlights.com/products/bong-69-controller-priority-shipping-included).
 
+####Which version should I get?
+If you have 5v or 12v pixels you can use Version 3.  If you are using 24v pixels you should now use Version 4.  Version 4 is more robust with higher voltages.  If you have 12v, 24v, 36v or 48V pixels can use Version 4.  We are not making any more Version 3 boards.
+
+####What's new in Version 4?
+- Works with input voltages from 12v to 48v.
+- Dropping support for 5v pixels.
+- 5A replaceable fuses are now used on LED power outputs.
+- Power input connectors are a round nut that uses spade connectors.
+- New step down converters are used to make 3.3v and 5v needed by the board.
+- Through hole input capacitor was replaced with 3 smd capacitors.
+- Toned down the brightness of the blue fuse indicator leds.
+- Now works with 36v pixels like Govee and 48v pixels like JellyFish.
+- 
 ## What's new in version 3?
 - Resettable fuses are now used on LED power outputs with 4A hold / 8A trip
 - Added a blue LED good fuse indicator next to each fuse.  This helps to tell if a fuse is tripped.
