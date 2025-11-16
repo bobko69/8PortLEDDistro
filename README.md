@@ -303,3 +303,7 @@ The 8 Port LED Distro can control DMX lights if you install ESPixelStick firmwar
 Here are the config files we load on to the board before we ship it to you:
 - version 0.14 config file: https://github.com/bobko69/8PortLEDDistro/blob/main/files/wled_cfg_SHIP_0.14.x.json
 - version 0.15 config file: https://github.com/bobko69/8PortLEDDistro/blob/main/files/wled_cfg_SHIP_0.15.x.json
+
+## How do i upgrade from WLED version 0.14 to version 0.15?
+Version 15 config is different from the version 14 config.  You need to do a full erase of the flash when upgrading.
+I suggest using install.wled.me to reflash the firmware.  If the site cant find the board try flipping the USBC cable over. Sometimes these cables work in one direction but not the other.  Press the blue 'ethernet' button to install the firmware with ethernet enabled.  Then press the 'install' button.  When asked, you should check the box that says 'eraser device'.  After the firmware is loaded it will prompt you to set up the wifi. Skip this step, remove the USBC cable and apply power to the main green power in connector. Connect to the WLED-AP with your phone and do the wifi set up here.  You will need to re configure the output ports too.
