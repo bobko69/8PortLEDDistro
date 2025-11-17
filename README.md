@@ -307,12 +307,15 @@ Here are the config files we load on to the board before we ship it to you:
 ## How do I upgrade from WLED version 0.14 to version 0.15?
 The Version 0.14 config file is not compatible with WLED version 0.15.  You need to do a full erase of the flash when upgrading.
 - Connect the board to a computer with a USBC cable and use a web browser to open [http://install.wled.me](https://install.wled.me/)
-![version 0.15 update](./img/version_15.0_upgrade_1.png)
+<img src="./img/version_15.0_upgrade_1.png" width="400">
+
 - Click the blue 'Ethernet' button to install the firmware with ethernet enabled.
 - Press the 'Install' Button
-![version 0.15 update](./img/version_15.0_upgrade_2.png)
+<img src="./img/version_15.0_upgrade_2.png" width="400">
+
 - A list of com devices will pop up.  You will need to select the one the board is connected to.
-![version 0.15 update](./img/version_15.0_upgrade_3.png) 
+<img src="./img/version_15.0_upgrade_3.png" width="400">
+
 - When asked, make sure to check the box next to 'Erase Device'
 - After the firmware is loaded it will prompt you to set up the wifi. Skip this step
 - Remove the USBC cable and apply power to the main green power in connector
