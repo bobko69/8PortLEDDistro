@@ -320,3 +320,6 @@ The Version 0.14 config file is not compatible with WLED version 0.15.  You need
 - You will need to re configure the output ports too
 
 In Version 0.15 GPIO14 and GPIO15 are used by the digital mic by default.  There are instructions above that tell how to unset those so they can be used with output 7 and output 8.
+
+## There are WIFI issues after upgrading to version 0.15, how do i fix this?
+The Version 0.14 config file is not compatible with WLED version 0.15.  You need to do a full erase of the flash when upgrading.  The above question tells how to do this.
