@@ -305,5 +305,18 @@ Here are the config files we load on to the board before we ship it to you:
 - version 0.15 config file: https://github.com/bobko69/8PortLEDDistro/blob/main/files/wled_cfg_SHIP_0.15.x.json
 
 ## How do I upgrade from WLED version 0.14 to version 0.15?
-Version 15 config is different from the version 14 config.  You need to do a full erase of the flash when upgrading.
-I suggest using install.wled.me to reflash the firmware.  If the site cant find the board try flipping the USBC cable over. Sometimes these cables work in one direction but not the other.  Press the blue 'ethernet' button to install the firmware with ethernet enabled.  Then press the 'install' button.  When asked, you should check the box that says 'eraser device'.  After the firmware is loaded it will prompt you to set up the wifi. Skip this step, remove the USBC cable and apply power to the main green power in connector. Connect to the WLED-AP with your phone and do the wifi set up here.  You will need to re configure the output ports too.
+The Version 0.14 config file is not compatible with WLED version 0.15.  You need to do a full erase of the flash when upgrading.
+- Connect the board to a computer with a USBC cable and use a web browser to open [http://install.wled.me](https://install.wled.me/)
+![version 0.15 update](./img/version_15.0_upgrade_1.png)
+- Click the blue 'Ethernet' button to install the firmware with ethernet enabled.
+- Press the 'Install' Button
+![version 0.15 update](./img/version_15.0_upgrade_2.png)
+- A list of com devices will pop up.  You will need to select the one the board is connected to.
+![version 0.15 update](./img/version_15.0_upgrade_3.png) 
+- When asked, make sure to check the box next to 'Erase Device'
+- After the firmware is loaded it will prompt you to set up the wifi. Skip this step
+- Remove the USBC cable and apply power to the main green power in connector
+- Connect to the WLED-AP with your phone and do the wifi set up here
+- You will need to re configure the output ports too
+
+In Version 0.15 GPIO14 and GPIO15 are used by the digital mic by default.  There are instructions above that tell how to unset those so they can be used with output 7 and output 8.
