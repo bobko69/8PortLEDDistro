@@ -225,7 +225,7 @@ You can and that will be fine, but if you are pulling more than 5 amps you proba
 Flickering can be caused by many things and can be very hard to diagnose.  It could be from a grounding problem, needing more power injection, a long distance of wire before the first pixel, resistance in the line, or any number of weird unforeseen things.  2 things I have found to work are using data boosters like an [F-amp](https://pixelcontroller.com/store/accessories/53-famp.html) (there are many vendors that sell similar items) and wrapping a ferrite ring on the data line. [ferrite example video](https://www.youtube.com/watch?v=6O5rD1BZeVc) <br> <img src="./img/ferrite_ring.png" width="400">
 
 ## How do I add a DS18B20 temperature sensor?
-- Download and install this image which is built with ethernet and the Dallas temperature sensor: https://github.com/bobko69/8PortLEDDistro/blob/main/files/WLED_0.14.1-b3_ESP32_Ethernet_DallasTempSensor.bin
+- Download and install this image which is built with ethernet and the Dallas temperature sensor: https://github.com/bobko69/8PortLEDDistro/blob/main/files/WLED_0.15.3_ESP32_Ethernet_tempsensor.bin
 - Check to make sure the GPIO pin is set to 33 under config/usermods.
 
   ![temp sensor](./img/temp_sensor_1.png)
