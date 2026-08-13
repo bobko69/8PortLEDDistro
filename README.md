@@ -83,22 +83,23 @@ The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm
 | LED8 | GPIO33 | GPIO15 |
 
 ## How do I use audio reactive WLED?
-- Wire up your microphone.  This example is for an INMP441 and PCB v2.
+- Wire up your microphone.  This example is for an INMP441 and PCB v3 or v4.
 
-| INMP441 | 8 Port LED Distro |
+| 8 Port LED Distro | INMP441 |
 | ------- | ----------------- |
-| VDD | 3.3v |
-| GND | GND |
-| SD | GPIO17 |
-| L/R | GND |
-| WS | GPIO32 |
-| SCK | GPIO33 |
+| GND | GND & L/R |
+| GPIO39 | nothing |
+| GPIO32 | WS |
+| GPIO33 | SCK |
+| 3.3v | VDD |
+| GPIO17 | SD |
 
-![INMP441 connection](./img/audio_reactive_1.png)
+
+![INMP441 connection](./img/IMG_4917sm.png)
 
 - Configure WLED, goto Settings/UserMods, scroll down to the AudioReactive section.
 Place a check next to Enabled, Select 'Generic I2s' for type, set I2S SD to 17, Set I2S WS to 32, set I2S SCK to 33, set squelch to 10, set gain to 30, and press the 'Save' button.  
-![WLED settings](./img/wled_sound_reactive.png)
+![WLED settings](./img/audio_reactive_settings.png)
 
 ## Where can I get the gerber files for this project?
 Sorry the files are not available.  This is not an open source project.
