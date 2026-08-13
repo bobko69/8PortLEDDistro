@@ -83,7 +83,7 @@ The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm
 | LED8 | GPIO33 | GPIO15 |
 
 ## How do I use audio reactive WLED?
-- Wire up your microphone.  This example is for an INMP441 and PCB v3 or v4.
+- Wire up your microphone.  This example is for an INMP441 and PCB v3 or v4.  You will also need to solder a 6 pin female header to H1 on the board.
 
 | 8 Port LED Distro | INMP441 |
 | ------- | ----------------- |
