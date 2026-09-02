@@ -134,7 +134,7 @@ There are a couple of ways to update the firmware on the board.  None of them us
 | GPIO05 | LED7 | LED5 |
 | GPIO12 | LED3 | LED6 |
 | GPIO13 | RMII EMAC RXER | RMII EMAC RXER |
-| GPIO14 | LED2 | LED7 |
+|  | LED2 | LED7 |
 | GPIO15 | LED1 | LED8 |
 | GPIO16 | OSC EN | OSC EN |
 | GPIO17 | LED6 | H1 |
@@ -295,6 +295,18 @@ GPIO14 and GPIO15 are assigned to the digital mic in version 0.15.x.
 - Press the save button.
 - Re-boot the board.
 - Now you should be able to assign GPIO14 and GPIO15 to output ports.
+
+## Why can't I set Port 4 to GPIO 4 after updating to WLED 16.0.0
+**Cause:**  
+Starting in newer builds of WLED, **GPIO 4** is assigned by default to the **IR Sensor** input. WLED prevents assigning a GPIO pin to an LED output strip if another hardware feature (like IR, Relay, or Buttons) is already using that same pin.
+
+**Solution:**  
+To assign **GPIO 4** to **Port 4**, you must first unassign it from the IR Sensor setting:
+1. In the WLED Web UI, go to **Config** → **LED Preferences**.
+2. Scroll down to the **Hardware setup** section.
+3. Locate the **IR pin** field (which currently shows `4`) and change it to **`-1`** (or clear the box completely).
+4. Scroll to the bottom and click **Save**.
+5. Return to **Config** → **LED Preferences**, navigate to **LED outputs**, set **Port 4** to **`4`**, and click **Save** again.
 
 ## Can I control DMX lights with the 8 Port LED Distro?
 The 8 Port LED Distro can control DMX lights if you install ESPixelStick firmware and with a DMX adapter.  Instructions for making this adapter and how to set it up can be found here: https://github.com/bobko69/DMX_Adapter
