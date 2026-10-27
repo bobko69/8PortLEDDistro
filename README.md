@@ -12,6 +12,17 @@ You can purchase the 8 Port LED Distro in our [Tindie store](https://www.tindie.
 ## Which version should I get?
 If you have 5v or 12v pixels you can use Version 3.  If you are using 24v pixels you should now use Version 4.  Version 4 is more robust with higher voltages.  If you have 12v, 24v, 36v or 48V pixels can use Version 4.  We are not making any more Version 3 boards.
 
+## Where can I get help with WLED?
+The board runs WLED, but we don't make WLED and can't answer questions about WLED itself (effects, presets, segments, sound reactive settings, usermods...). The WLED community knows it best:
+- [WLED documentation](https://kno.wled.ge/): start here
+- [WLED Discord](https://discord.com/invite/e2NW9hwPeV): the quickest answers
+- [WLED forum](https://wled.discourse.group/)
+- [r/WLED on Reddit](https://www.reddit.com/r/WLED/)
+- [WLED web installer](https://install.wled.me/): install or update WLED from your browser
+- [WLED bug reports](https://github.com/wled/WLED/issues): only for bugs in WLED itself
+
+Questions about the board itself (wiring, ports, fuses, power) are answered in this FAQ.
+
 ## What's new in Version 4?
 - Works with input voltages from 12v to 48v.
 - Dropping support for 5v pixels.
@@ -181,7 +192,7 @@ More things you can do:
  
 3. Enable the ethernet port by going to Config/WiFi setup.  Enter a static IP address and gateway.  Also scroll to the bottom of the page and select 'WT32-ETH01' as the Ethernet Type.  Press save, plug in an ethernet cable, restart the board. <br> <img src="./img/static_ip_gateway.png" width="400"> <br> <img src="./img/ethernet_type.png" width="400">
 
-Im not a WLED expert, if there are other things you want to do there are lots of tutorials on youtube that explain how to join the board to your wifi network, how to make segments, how to make presets, etc.
+Im not a WLED expert, if there are other things you want to do there are lots of tutorials on youtube that explain how to join the board to your wifi network, how to make segments, how to make presets, etc. For WLED questions see [Where can I get help with WLED?](#where-can-i-get-help-with-wled)
 
 ## How do I set the LED preferences for each port?
 This will show how to set up the LED preferences for a Version 2 PCB.  Version 1 PCBs will have different GPIO pins.
