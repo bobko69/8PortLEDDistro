@@ -66,12 +66,12 @@ No, the USB-C connector can only be used for programing the board.  When you plu
 - Version 3: 110mm x 70mm x 25mm
 
 ## Where can I get the STL files for the CG1500 / DIN rail mount?
-STL files can be found on thingiverse https://www.thingiverse.com/thing:5599003
+STL files can be found on Printables https://www.printables.com/model/1873132-8-port-led-distro-cg1500-mount
 
 <img src="./img/IMG_3282sm.jpg" width="400">
 
 ## Where can I get the STL files for mounting in a MTM AC30C-11 case?
-STL files and instructions can be found on thingiverse https://www.thingiverse.com/thing:6442204
+STL files and instructions can be found on Printables https://www.printables.com/model/1873141-8-port-led-distro-mtm-ac30c-11-mount
 
 <img src="./img/IMG_3977.png" width="400">
 
