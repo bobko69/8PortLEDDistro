@@ -82,8 +82,8 @@ The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm
 
 ## What are the GPIO pin assignment:
 
-| Port | PCB v1 | PCB v2 |
-| ---- | ------ | ------ |
+| Port | PCB v1 | PCB v2, v3, v4 |
+| ---- | ------ | -------------- |
 | LED1 | GPIO15 | GPIO1 |
 | LED2 | GPIO14 | GPIO2 |
 | LED3 | GPIO12 | GPIO3 |
@@ -92,6 +92,8 @@ The holes are 3mm x 3mm.  The spacing from outside edge to outside edge is 105mm
 | LED6 | GPIO17 | GPIO12 |
 | LED7 | GPIO5 | GPIO14 |
 | LED8 | GPIO33 | GPIO15 |
+
+The LED port GPIOs are the same on v2, v3 and v4 (including v4.1).
 
 ## How do I use audio reactive WLED?
 - Wire up your microphone.  This example is for an INMP441 and PCB v3 or v4.  You will also need to solder a 6 pin female header to H1 on the board.
@@ -135,7 +137,7 @@ There are a couple of ways to update the firmware on the board.  None of them us
 ```
 
 ## How are the GPIO pins assigned?
-| Pin | V1 | V2 |
+| Pin | V1 | V2, V3, V4 |
 | ------ | -- | -- |
 | GPIO00 | EN | EN |
 | GPIO01 | USB-RX | LED1 / USB-RX |
@@ -145,7 +147,7 @@ There are a couple of ways to update the firmware on the board.  None of them us
 | GPIO05 | LED7 | LED5 |
 | GPIO12 | LED3 | LED6 |
 | GPIO13 | RMII EMAC RXER | RMII EMAC RXER |
-|  | LED2 | LED7 |
+| GPIO14 | LED2 | LED7 |
 | GPIO15 | LED1 | LED8 |
 | GPIO16 | OSC EN | OSC EN |
 | GPIO17 | LED6 | H1 |
@@ -162,7 +164,7 @@ There are a couple of ways to update the firmware on the board.  None of them us
 | GPIO34 | open | H2 |
 | GPIO35 | H6 | H3 |
 | GPIO36 | H7 | H4 |
-| GPIO39 | open | open |
+| GPIO39 | open | open (H1 on V3 and V4) |
 
 ## Quick start guide:
 
