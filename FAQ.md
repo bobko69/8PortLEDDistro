@@ -35,6 +35,7 @@
 - [Can a relay turn the board on and off?](#can-a-relay-turn-the-board-on-and-off)
 
 **Mounting and the board**
+- [What can I set the board on?](#what-can-i-set-the-board-on)
 - [What are the dimensions and mounting holes?](#what-are-the-dimensions-and-mounting-holes)
 - [Where can I get the STL files for mounts?](#where-can-i-get-the-stl-files-for-mounts)
 - [What temperatures can it run in?](#what-temperatures-can-it-run-in)
@@ -324,6 +325,19 @@ I use [Kasa smart plugs](https://www.amazon.com/Kasa-Smart-Required-Certified-EP
 ---
 
 # Mounting and the board
+
+## What can I set the board on?
+The solder joints and pins on the bottom of the board carry the full power supply voltage, only a few millimeters apart. Anything under the board that conducts, even a little, can connect them. That can burn out a port, melt its connector off the board, or damage the surface underneath.
+
+**Never power up the board sitting on:**
+- **The power supply.** Its metal case is a conductor, and the vent holes put the board right next to live parts.
+- **Metal**: shelves, enclosure walls, tools, foil.
+- **Mats**: desk, mouse or anti-static mats. Many contain carbon and conduct a little, especially when warm.
+- **Anything damp.**
+
+**Do:**
+- Mount it on **standoffs** in its 4 mounting holes, or use one of the [printable mounts](#where-can-i-get-the-stl-files-for-mounts).
+- For a quick test on the bench, set it on something hard, dry and non-conductive, like a wooden board or a plastic tray.
 
 ## What are the dimensions and mounting holes?
 - **Board**: 110 mm × 70 mm × 25 mm (Version 2, 3 and 4). Version 1 is 30 mm tall.

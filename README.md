@@ -51,7 +51,7 @@ Version 4 is the one we make now. It works with 12 V, 24 V, 36 V and 48 V pixels
 
    ![led outputs](./img/led_outputs.png)
 
-3. **Double check** all power and LED wires.
+3. **Double check** all power and LED wires, and check what the board is sitting on. The pins on the bottom of the board carry the full power supply voltage. **Never power it up sitting on the power supply, on metal, or on a mat.** Put it on standoffs or a mount, or on something dry and non-conductive like a wooden board. See [What can I set the board on?](./FAQ.md#what-can-i-set-the-board-on)
 
 4. **Turn on the power supply.** The board ships set up for 50 LEDs on each port, so you should see 50 LEDs light up on every port that has lights on it.
 
