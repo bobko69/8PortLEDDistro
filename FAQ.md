@@ -15,6 +15,7 @@
 - [What are the GPIO pins for each port?](#what-are-the-gpio-pins-for-each-port)
 - [How do I set the LED preferences for each port?](#how-do-i-set-the-led-preferences-for-each-port)
 - [How do I set up the brightness limiter?](#how-do-i-set-up-the-brightness-limiter)
+- [Can I use Govee lights?](#can-i-use-govee-lights)
 
 **xLights and other firmware**
 - [How do I add the 8 Port LED Distro to xLights?](#how-do-i-add-the-8-port-led-distro-to-xlights)
@@ -158,6 +159,20 @@ The limiter works out the current at the same voltage as your pixels, so it work
 <img src="./img/wled16_brightness_limiter.png" width="400">
 
 In this example, output 1 is set to 20 mA per pixel and 4500 mA at most.
+
+## Can I use Govee lights?
+Some Govee lights work, but different Govee models use different LED chips, so the usual WS281x setting doesn't work for all of them. If the colors are wrong or nothing lights up, the **LED type** is the first thing to check.
+
+| Govee lights | LED type to pick in WLED |
+| --- | --- |
+| Permanent Outdoor Lights Pro (H706A, H706B, H706C) | **SM16825 RGBCW** |
+| Permanent Outdoor Lights (the original, not Pro) | **WS281x** |
+
+These come from other WLED users, not from our own testing. For other Govee models, search the [WLED forum](https://wled.discourse.group/) for your model number. Some Govee lights use chips that WLED doesn't support yet.
+
+After you pick the LED type, try a few **Color Orders** until red shows as red. See [How do I set the LED preferences for each port?](#how-do-i-set-the-led-preferences-for-each-port)
+
+Govee strings only take data in at one end, so connect the board to the input end of the string.
 
 ---
 

@@ -63,7 +63,7 @@ If it still flickers, two fixes that have worked for us:
 Since Version 3 changed to 33 Ω resistors on the data outputs, we haven't needed F-amps in our own display.
 
 ## The colors are wrong
-Strips don't all send colors in the same order. In **Config** → **LED Preferences**, change the **Color Order** for that port until red shows as red. Each port has its own setting. Also check that the **LED type** matches your pixels (for example RGB vs RGBW).
+Strips don't all send colors in the same order. In **Config** → **LED Preferences**, change the **Color Order** for that port until red shows as red. Each port has its own setting. Also check that the **LED type** matches your pixels (for example RGB vs RGBW). Govee lights often need a different LED type; see [Can I use Govee lights?](./FAQ.md#can-i-use-govee-lights)
 
 ## Network problems
 Wi-Fi, Ethernet and finding the board on your network are covered on the [Network setup](./NETWORK.md#problems) page.
