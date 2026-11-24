@@ -31,6 +31,7 @@
 
 **Add-ons**
 - [How do I use sound reactive WLED?](#how-do-i-use-sound-reactive-wled)
+- [How do I add buttons?](#how-do-i-add-buttons)
 - [How do I add a DS18B20 temperature sensor?](#how-do-i-add-a-ds18b20-temperature-sensor)
 - [How do I hook up a relay?](#how-do-i-hook-up-a-relay)
 - [Can a relay turn the board on and off?](#can-a-relay-turn-the-board-on-and-off)
@@ -301,7 +302,19 @@ You need an INMP441 microphone and a 6 pin female header soldered to **H1** on t
 
    <img src="./img/wled16_audioreactive.png" width="400">
 
-The microphone uses GPIO 32 and 33, the same pins as the temperature sensor and the relay. You can use only one of them at a time.
+The microphone uses GPIO 32 and 33, the same pins as the temperature sensor and the relay. You can use only one of them at a time. Buttons go on H2 and H3, so you can use them with the microphone. See [How do I add buttons?](#how-do-i-add-buttons)
+
+## How do I add buttons?
+Headers **H2** (GPIO34) and **H3** (GPIO35) are for buttons. They work at the same time as the microphone. Each header has three pins: **GND**, **IO** and **3.3V**.
+
+![Buttons on H2 and H3](./img/buttons_h2_h3.png)
+
+1. Wire each button between the header's **GND** and **IO** pins.
+2. On each header, add a **10 kΩ resistor** between the **IO** pin and the **3.3V** pin. GPIO34 and 35 don't have built-in pull-ups, so without the resistor WLED sees random button presses.
+3. In WLED, go to **Config** → **LED Preferences** and set **Button 0 GPIO** to 34 and **Button 1 GPIO** to 35, with type **Pushbutton**.
+4. Press **Save**.
+
+To choose what each button does, such as switching to a preset, see [Buttons in the WLED docs](https://kno.wled.ge/features/macros/#button-actions).
 
 ## How do I add a DS18B20 temperature sensor?
 1. Install this firmware, which has Ethernet and the temperature sensor built in: [WLED_0.15.3_ESP32_Ethernet_tempsensor.bin](https://github.com/bobko69/8PortLEDDistro/blob/main/files/WLED_0.15.3_ESP32_Ethernet_tempsensor.bin)
