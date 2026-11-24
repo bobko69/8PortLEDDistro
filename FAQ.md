@@ -305,7 +305,7 @@ You need an INMP441 microphone and a 6 pin female header soldered to **H1** on t
 The microphone uses GPIO 32 and 33, the same pins as the temperature sensor and the relay. You can use only one of them at a time. Buttons go on H2 and H3, so you can use them with the microphone. See [How do I add buttons?](#how-do-i-add-buttons)
 
 ## How do I add buttons?
-Headers **H2** (GPIO34) and **H3** (GPIO35) are for buttons. They work at the same time as the microphone. Each header has three pins: **GND**, **IO** and **3.3V**.
+If you also want to use a microphone on GPIO 17, 32 and 33 (header H1), put your buttons on headers **H2** (GPIO34) and **H3** (GPIO35). Each of these headers has three pins: **GND**, **IO** and **3.3V**.
 
 ![Buttons on H2 and H3](./img/buttons_h2_h3.png)
 
@@ -313,6 +313,8 @@ Headers **H2** (GPIO34) and **H3** (GPIO35) are for buttons. They work at the sa
 2. On each header, add a **10 kΩ resistor** between the **IO** pin and the **3.3V** pin. GPIO34 and 35 don't have built-in pull-ups, so without the resistor WLED sees random button presses.
 3. In WLED, go to **Config** → **LED Preferences** and set **Button 0 GPIO** to 34 and **Button 1 GPIO** to 35, with type **Pushbutton**.
 4. Press **Save**.
+
+A third button can go on **H4** (GPIO36), behind the Ethernet jack. Wire it the same way, but connect its resistor to the **3.3V** pin on H2 or H3, not to the **5V** pin on H4. 5 V on an ESP32 pin can damage it. Set **Button 2 GPIO** to 36.
 
 To choose what each button does, such as switching to a preset, see [Buttons in the WLED docs](https://kno.wled.ge/features/macros/#button-actions).
 
