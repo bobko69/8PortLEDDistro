@@ -19,6 +19,7 @@
 
 **xLights and other firmware**
 - [How do I add the 8 Port LED Distro to xLights?](#how-do-i-add-the-8-port-led-distro-to-xlights)
+- [Is there a universe limit for E1.31 (LOR, xLights)?](#is-there-a-universe-limit-for-e131-lor-xlights)
 - [How do I install ESPixelStick?](#how-do-i-install-espixelstick)
 - [Can I control DMX lights?](#can-i-control-dmx-lights-with-the-8-port-led-distro)
 
@@ -197,6 +198,13 @@ Govee strings only take data in at one end, so connect the board to the input en
 9. Close the window and press **Save** (top left).
 
 Give the board a static IP address and connect it with Ethernet first, so xLights can always find it. See [Network setup](./NETWORK.md).
+
+## Is there a universe limit for E1.31 (LOR, xLights)?
+Yes. WLED listens to at most **20 universes** on the Ethernet firmware the board ships with (12 on the regular Wi-Fi firmware). They're counted from the start universe set in WLED under **Config** → **Sync Interfaces**. Universes past that are ignored.
+
+At 170 RGB pixels per universe, 20 universes is about 3,400 pixels. If you need more, split your props across two boards. If the **DMX start address** is above 1, the last pixels spill into one more universe, so check it if you're close to the limit.
+
+The board works with any sequencer that sends E1.31 (sACN), such as Light-O-Rama (LOR), xLights or FPP.
 
 ## How do I install ESPixelStick?
 1. Download and unzip the latest **dist.zip** release of ESPixelStick: [dist.zip on GitHub](https://github.com/MartinMueller2003/ESPixelStick/releases/tag/dist)
